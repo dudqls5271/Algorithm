@@ -73,8 +73,6 @@ public class question_1 {
 			}
 		}
 		return false;
-		
-		
 	}
 	
 	
