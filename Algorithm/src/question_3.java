@@ -7,7 +7,7 @@ public class question_3 {
 
 	public static void main(String[] args) {
 		question_3 twoSumSolutions = new question_3();
-		System.out.println(Arrays.toString(twoSumSolutions.solution2(new int[]{2,3,5,7}, 9)));
+		System.out.println(Arrays.toString(twoSumSolutions.solution2(new int[]{2,3,5,7,4}, 9)));
 		
 	}
 
@@ -55,10 +55,8 @@ public class question_3 {
 	 */
 	
 	private int[] solution2(int[] numbers, int target) {
-		
 		// Map 선언
 		Map<Integer, Integer> numberMap = new HashMap<>();
-		
 		
 		// Map에 넣는 과정이다. 
 		// 값을 Key로 넣고, values에다가 index을 넣는다.
@@ -91,5 +89,18 @@ public class question_3 {
 	
 	/*
 	 * 위의 문제들을 3sum 문제로 변경하여 제출
+	 * 
+	 * 2 3 4 
 	 * */
+	
+	
+	private int[] solution3(int[] numbers, int target) {
+		Map<Integer, Integer> numberMap = new HashMap<>();
+		
+		// 2 + x + x = 
+		for(int i = 0; i < numbers.length; i++) {
+			
+		}
+		return null;
+	}
 }
