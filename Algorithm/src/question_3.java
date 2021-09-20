@@ -118,4 +118,22 @@ public class question_3 {
 		}
 		return null;
   	}
+	
+	private static int[] arrayTwoSumTarget3(int[] numArr, int target){
+        Map<Integer, Integer> numMap = new HashMap<>();
+
+        for (int i = 0; i < numArr.length; i++) {
+            int result = target - numArr[i];
+            for (int j = i+1; j < numArr.length; j++) {
+                int result2 = result - numArr[j];
+
+                if(numMap.containsKey(result2) && numMap.get(result2) != j && numMap.get(result2) != i){
+                    return new int[]{i, j, numMap.get(result2)};
+                }
+            }
+            numMap.put(numArr[i], i);
+        }
+
+        return null;
+    }
 }
