@@ -106,7 +106,7 @@ public class question_3 {
 		return null;
 	}
 	
-	private int[] solution3(int[] numbers, int target){
+	private int[] solution3_1(int[] numbers, int target){
 		for(int i = 0; i < numbers.length; i++) {
 			for(int j = i + 1; j < numbers.length; j++) {
 				for(int k = j + 1; k < numbers.length; k++) {
