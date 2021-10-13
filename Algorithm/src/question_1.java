@@ -6,15 +6,15 @@ import java.util.Set;
 
 public class question_1 {
 	
-	//	ìˆ«ìžë¡œ êµ¬ì„±ëœ ë°°ì—´ì´ ì£¼ì–´ì¡Œì„ë•Œ ì¤‘ë³µëœ ìˆ«ìžê°€ ìžˆëŠ”ì§€ í™•ì¸í•˜ëŠ” í•¨ìˆ˜ë¥¼ ìž‘ì„±í•´ë¼. 
-	//	ì¤‘ë³µëœ ìˆ«ìžê°€ ìžˆë‹¤ë©´ true ì•„ë‹ˆë©´ false.
+	//	¼ýÀÚ·Î ±¸¼ºµÈ ¹è¿­ÀÌ ÁÖ¾îÁ³À»¶§ Áßº¹µÈ ¼ýÀÚ°¡ ÀÖ´ÂÁö È®ÀÎÇÏ´Â ÇÔ¼ö¸¦ ÀÛ¼ºÇØ¶ó. 
+	//	Áßº¹µÈ ¼ýÀÚ°¡ ÀÖ´Ù¸é true ¾Æ´Ï¸é false.
 	
 	
 	/*  
-	    ì‹œê°„ ë³µìž¡ë„ : O(n2)
-		ê³µê°„ ë³µìž¡ë„ : O(1) 
+	    ½Ã°£ º¹Àâµµ : O(n2)
+		°ø°£ º¹Àâµµ : O(1) 
 		
-		ê³µê°„ ë³µìž¡ë„ëŠ” ë©”ìš° ì¢‹ìœ¼ë‚˜ ì‹œê°„ ë³µìž¡ë„ê°€ n2ì¸ ê²ƒì€ ë³´í†µì€ ë‹µì´ ì•„ë‹ˆë‹¤.
+		°ø°£ º¹Àâµµ´Â ¸Þ¿ì ÁÁÀ¸³ª ½Ã°£ º¹Àâµµ°¡ n2ÀÎ °ÍÀº º¸ÅëÀº ´äÀÌ ¾Æ´Ï´Ù.
 	*/
 	
 	public static void main(String[] args) {
@@ -38,9 +38,9 @@ public class question_1 {
 	
 	
 	/*
-	 * 	ë°°ì—´ì´ ë¬¸ì œê°€ ë‚˜ì˜¤ë©´ í•­ìƒ ì •ë ¬ì´ ë˜ì–´ìžˆëŠì§€ì„ ìƒê°í•˜ìž
+	 * 	¹è¿­ÀÌ ¹®Á¦°¡ ³ª¿À¸é Ç×»ó Á¤·ÄÀÌ µÇ¾îÀÖ´ÀÁöÀ» »ý°¢ÇÏÀÚ
 	 *	ex) 1 2 2 3 4
-	 *  Arrays.sortì„ ì‚¬ìš©í•˜ë©´ ì‹œê°„ ë³µìž¡ë„ëŠ” O(N longN), ê³µê°„ë³µìž¡ë„ëŠ” O(logN)ì´ ëœë‹¤.
+	 *  Arrays.sortÀ» »ç¿ëÇÏ¸é ½Ã°£ º¹Àâµµ´Â O(N longN), °ø°£º¹Àâµµ´Â O(logN)ÀÌ µÈ´Ù.
 	 */
 	
 	private boolean solution2 (int[] numbers) {
@@ -57,9 +57,9 @@ public class question_1 {
 	
 	
 	/*
-	 * Setì€ ì¤‘ë³µì„ í—ˆìš©í•˜ì§€ ì•Šê³ , 
-	 * ë˜‘ê°™ì€ ì—˜ë¦¬ë¨¼íŠ¸ë¥¼ ì–´ë ¤ë²ˆ ë„£ì„ìˆ˜ ì—†ë‹¤.
-	 * Setì€ Hashê°’ìœ¼ë¡œ ì¡°íšŒë¥¼ í•˜ê¸° ë•Œë¬¸ì— O(1)ì´ë‹¤. 
+	 * SetÀº Áßº¹À» Çã¿ëÇÏÁö ¾Ê°í, 
+	 * ¶È°°Àº ¿¤¸®¸ÕÆ®¸¦ ¾î·Á¹ø ³ÖÀ»¼ö ¾ø´Ù.
+	 * SetÀº Hash°ªÀ¸·Î Á¶È¸¸¦ ÇÏ±â ¶§¹®¿¡ O(1)ÀÌ´Ù. 
 	 */
 	
 	private boolean solution3 (int[] numbers)  {
